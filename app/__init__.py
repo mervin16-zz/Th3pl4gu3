@@ -13,6 +13,6 @@ def index():
     return HTML("index.html")
 
 
-# Start the app
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8082)
+@app.errorhandler(404)
+def page_not_found(e):
+    return HTML("404.html")
