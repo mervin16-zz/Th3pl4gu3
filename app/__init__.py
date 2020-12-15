@@ -1,4 +1,5 @@
 from flask import Flask, render_template as HTML
+import app.portfolio as portofolio_bprint
 
 app = Flask(
     __name__,
@@ -7,10 +8,8 @@ app = Flask(
     instance_relative_config=True,
 )
 
-
-@app.route("/")
-def index():
-    return HTML("index.html")
+# Register Blueprints
+app.register_blueprint(portofolio_bprint.portfolio)
 
 
 @app.errorhandler(404)
