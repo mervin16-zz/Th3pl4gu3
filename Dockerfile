@@ -9,10 +9,7 @@ WORKDIR /th3pl4gu3
 ADD . /th3pl4gu3
 
 # Dependencies for uWSGI
-RUN apk add python3-dev build-base linux-headers pcre-dev
-
-# Install the dependencies from requirements
-RUN pip install -r requirements.txt
+RUN apk add python3-dev build-base linux-headers pcre-dev && pip install -r requirements.txt
 
 # In case bash is needed
 #RUN apk add --no-cache bash
