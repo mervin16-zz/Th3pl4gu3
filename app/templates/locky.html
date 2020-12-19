@@ -1,0 +1,62 @@
+{% extends 'master.html' %}
+
+{% block title %}
+Locky Password Manager
+{% endblock %}
+
+{% block meta %}
+<meta content="Locky password manager" name="description">
+<meta content="Locky Password Manager Th3pl4gu3 Android App" name="keywords">
+{% endblock %}
+
+{% block body %}
+
+<main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+                    <h2 class="portfolio-title">Locky Password Manager</h2>
+                    <div class="owl-carousel portfolio-details-carousel">
+                        <img src="{{ url_for('static', filename='img/portfolio/locky.webp') }}" class="img-fluid"
+                            alt="Locky Banner">
+                        <img src="{{ url_for('static', filename='img/portfolio/locky2.webp') }}" class="img-fluid"
+                            alt="Locky Banner">
+                        <img src="{{ url_for('static', filename='img/portfolio/android.webp') }}" class="img-fluid"
+                            alt="Android Banner">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 portfolio-info">
+                    <h3>Project information</h3>
+                    <ul>
+                        <li><strong>Category</strong>: Android App</li>
+                        <li><strong>Project URL</strong>:
+                            <a href="https://play.google.com/store/apps/details?id=com.th3pl4gu3.locky_offline"
+                                target='_blank'>Google
+                                Play</a> |
+                            <a href="https://th3pl4gu3.wixsite.com/locky" target='_blank'>Official Website</a> |
+                            <a href="https://github.com/mervin16/Locky-Offline" target='_blank'>GitHub Repo</a></li>
+                    </ul>
+
+                    <p>
+                        Locky is an easy to use password manager developed in native Android & Kotlin with minimalist
+                        components
+                        and that adheres to the material design concept.
+                        It is time to stop writing passwords on papers or use short unsafe passwords just for the sake
+                        of
+                        remembering it.
+                        You can save any passwords,bank cards and much more offline on your own phone.
+                    </p>
+                </div>
+
+            </div>
+        </div><!-- End Portfolio Details -->
+
+</main><!-- End #main -->
+
+{% endblock %}

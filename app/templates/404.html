@@ -1,22 +1,25 @@
-<!DOCTYPE html>
+{% extends 'master.html' %}
 
-<html lang="en">
+{% block title %}
+Error 404
+{% endblock %}
 
-    <head>
+{% block meta %}
+<meta content="Error 404" name="description">
+<meta content="Error 404" name="keywords">
+{% endblock %}
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
 
-    <title>Th3pl4gu3</title>
+{% block body %}
 
-    <link rel="icon" type="image/png" href=" {{ url_for('static', filename='images/plague-art-2.png')}} "/>
+<div class="container container-404">
 
-    </head>
+    <h1 class="text-404 mb-3"><span>404</span></h1>
 
-    <body style="background-color: #1d1c22;">
-        <h1 style="color: rgb(255, 70, 70); text-align: center; font-size: 60px;">Error 404</h1>
-    </body>
+    <h5>Oops! The Page you requested was not found!</h5>
 
-</html>
+    <a href="{{ url_for('portfolio.index')}}" class="btn-outline mb-5"> Back to Home</a>
+
+</div>
+
+{% endblock %}

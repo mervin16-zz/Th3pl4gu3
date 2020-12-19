@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bg.webp") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -1213,4 +1213,31 @@ section .container {
 
 .copyright span {
   color: #18d26e;
+}
+
+.container-404 {
+  text-align: start;
+}
+
+.text-404 {
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: 25px;
+  margin: 10px 0 0 0;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 25px;
+  margin-top: 25px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  color: #fff;
+  border: 2px solid #18d26e;
+  background: #18d26e;
 }
