@@ -11,11 +11,5 @@ ADD . /th3pl4gu3
 # Dependencies for uWSGI
 RUN apk add python3-dev build-base linux-headers pcre-dev && pip install -r requirements.txt
 
-# In case bash is needed
-#RUN apk add --no-cache bash
-
-# tell the port number the container should expose
-EXPOSE 8082
-
 # Run the command
 ENTRYPOINT ["uwsgi", "app.ini"]
