@@ -50,6 +50,6 @@ def mesg_route():
     return HTML("mesg.html")
 
 
-@portfolio.route("/portfolio")
-def portfolio_route():
-    return HTML("portfolio.html")
+@portfolio.route("/prometheus")
+def prometheus_route():
+    return HTML("prometheus.html")

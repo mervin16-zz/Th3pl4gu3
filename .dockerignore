@@ -1,5 +1,6 @@
-# Virtual environments
+# Virtual environments & files
 venv/
+*.env
 
 # Python Cache
 __pycache__/
@@ -9,3 +10,15 @@ Procfile
 
 # VS Code
 .vscode/
+
+# Markdown Files
+*.md
+
+# Git files
+**/.git
+
+# Nginx Files
+# Ignoring nginx folder here because all Nginx files
+# has already been defined on Prometheus
+# The Nginx here is just for testing
+**/nginx
